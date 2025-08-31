@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ndutils",
-    version="0.1.0",
+    version="0.1.1",
     description="nodriver utility functions for web crawling",
     long_description=long_description,
     long_description_content_type="text/markdown",
