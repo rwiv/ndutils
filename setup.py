@@ -13,6 +13,6 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "pydantic>=2.11.7",
-        "zendriver>=0.13.1",
+        "zendriver>=0.15.2",
     ],
 )
