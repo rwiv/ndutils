@@ -1,2 +1,2 @@
 pydantic==2.11.7
-nodriver==0.48.1
+zendriver==0.14.2

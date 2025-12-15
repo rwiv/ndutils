@@ -2,8 +2,8 @@ import asyncio
 import re
 from typing import TypeVar, Generator, Any
 
-from nodriver.cdp.browser import get_version
-from nodriver.core.tab import Tab
+from zendriver.cdp.browser import get_version
+from zendriver.core.tab import Tab
 
 T = TypeVar("T")
 

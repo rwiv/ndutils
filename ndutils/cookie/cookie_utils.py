@@ -1,7 +1,7 @@
 import json
 
-from nodriver.core.browser import Browser
-from nodriver.core.tab import Tab
+from zendriver.core.browser import Browser
+from zendriver.core.tab import Tab
 
 from .cookie import Cookie
 

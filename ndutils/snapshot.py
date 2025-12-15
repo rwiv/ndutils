@@ -1,9 +1,9 @@
 import base64
 
-from nodriver import cdp
-from nodriver.cdp.page import Viewport
-from nodriver.core.element import Element
-from nodriver.core.tab import Tab
+from zendriver import cdp
+from zendriver.cdp.page import Viewport
+from zendriver.core.element import Element
+from zendriver.core.tab import Tab
 
 
 async def save_html(tab: Tab, file_path: str):

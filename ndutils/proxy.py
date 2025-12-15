@@ -1,7 +1,7 @@
 import asyncio
 
-from nodriver.cdp import fetch
-from nodriver.core.tab import Tab
+from zendriver.cdp import fetch
+from zendriver.core.tab import Tab
 
 
 async def setup_proxy(username: str, password: str, tab: Tab):

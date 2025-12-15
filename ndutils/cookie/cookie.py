@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from nodriver.cdp.network import CookieParam
+from zendriver.cdp.network import CookieParam
 
 
 class Cookie(BaseModel):

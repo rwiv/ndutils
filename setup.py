@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ndutils",
-    version="0.1.6",
-    description="nodriver utility functions for web crawling",
+    version="0.1.3",
+    description="zendriver utility functions for web crawling",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rwiv/ndutils",
     packages=setuptools.find_packages(),
     install_requires=[
         "pydantic>=2.11.7",
-        "nodriver>=0.48.1",
+        "zendriver>=0.14.2",
     ],
 )

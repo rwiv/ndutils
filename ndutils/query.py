@@ -3,9 +3,9 @@ import os
 import time
 from dataclasses import dataclass
 
-from nodriver.core.connection import ProtocolException
-from nodriver.core.element import Element
-from nodriver.core.tab import Tab
+from zendriver.core.connection import ProtocolException
+from zendriver.core.element import Element
+from zendriver.core.tab import Tab
 
 from .snapshot import screenshot, save_html
 from .utils import path_join

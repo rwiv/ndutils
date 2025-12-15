@@ -1,3 +1,3 @@
 # ndutils
 
-nodriver utility functions for web crawling
+zendriver utility functions for web crawling
