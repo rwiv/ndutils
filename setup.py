@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ndutils",
-    version="0.1.2",
+    version="0.1.3",
     description="nodriver utility functions for web crawling",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -13,6 +13,6 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "pydantic>=2.11.7",
-        "zendriver>=0.13.1",
+        "nodriver>=0.48.1",
     ],
 )

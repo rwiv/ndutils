@@ -1,1 +1,1 @@
-from zendriver.cdp.page import *  # type: ignore
+from nodriver.cdp.page import *  # type: ignore

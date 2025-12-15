@@ -1,1 +1,1 @@
-from zendriver.cdp.network import *  # type: ignore
+from nodriver.cdp.network import *  # type: ignore

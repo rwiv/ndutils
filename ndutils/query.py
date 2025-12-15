@@ -3,9 +3,9 @@ import os
 import time
 from dataclasses import dataclass
 
-from zendriver.core.connection import ProtocolException
-from zendriver.core.element import Element
-from zendriver.core.tab import Tab
+from nodriver.core.connection import ProtocolException
+from nodriver.core.element import Element
+from nodriver.core.tab import Tab
 
 from .snapshot import screenshot, save_html
 from .utils import path_join
@@ -77,7 +77,23 @@ async def query_selector(selector: str, node: Element | Tab) -> Element | None:
 
 
 async def query_selector_all(selector: str, node: Element | Tab) -> list[Element]:
-    return await node.query_selector_all(selector)
+    data = await node.query_selector_all(selector)
+    if data is None:
+        return []
+
+    if not isinstance(data, list):
+        raw_list = [data]
+    else:
+        raw_list = data
+
+    validated_list = []
+    for item in raw_list:
+        if isinstance(item, Element):
+            validated_list.append(item)
+        else:
+            raise ValueError(f"Invalid item type: {type(item)}")
+
+    return validated_list
 
 
 async def one_elem(selector: str, node: Element | Tab) -> Element:

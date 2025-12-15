@@ -1,8 +1,8 @@
 import asyncio
 from typing import Any
 
-from zendriver.core.element import Element
-from zendriver.core.tab import Tab
+from nodriver.core.element import Element
+from nodriver.core.tab import Tab
 
 from .query import query_selector_not_null
 
